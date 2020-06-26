@@ -1,0 +1,782 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sem controller",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetMagIntent",
+          "slots": [],
+          "samples": [
+            "give me the magnification",
+            "what is magnification now",
+            "What is magnification",
+            "What is the magnification",
+            "get magnification"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SetMagIntent",
+          "slots": [
+            {
+              "name": "mag",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "mag_decimal",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "change",
+              "type": "change"
+            }
+          ],
+          "samples": [
+            "mag {change}",
+            "magnification {change}",
+            "set mag to {mag} point {mag_decimal} X",
+            "set mag to {mag} X",
+            "set magnification to {mag} point {mag_decimal} X",
+            "set magnification to {mag} X",
+            "set the mag to {mag} point {mag_decimal}",
+            "set mag to {mag} point {mag_decimal}",
+            "set mag to {mag}",
+            "set the mag to {mag}",
+            "{change} magnification",
+            "set magnification to {mag} point {mag_decimal} ",
+            "set magnification to {mag}",
+            "set the magnification to {mag}"
+          ]
+        },
+        {
+          "name": "GetBriIntent",
+          "slots": [],
+          "samples": [
+            "give me the brightness",
+            "what is brightness now",
+            "what is brightness",
+            "what is the brightness",
+            "get brightness"
+          ]
+        },
+        {
+          "name": "SetBriIntent",
+          "slots": [
+            {
+              "name": "bri",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "bri_decimal",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "change",
+              "type": "change"
+            }
+          ],
+          "samples": [
+            "brightness {change}",
+            "{change} brightness",
+            "set brightness to {bri} point {bri_decimal} percent",
+            "set brightness to {bri} point {bri_decimal} ",
+            "set brightness to {bri} percent",
+            "set brightness to {bri}"
+          ]
+        },
+        {
+          "name": "AutoFineAlignIntent",
+          "slots": [],
+          "samples": [
+            "auto align"
+          ]
+        },
+        {
+          "name": "AutoFineFocusIntent",
+          "slots": [],
+          "samples": [
+            "auto focus"
+          ]
+        },
+        {
+          "name": "AutoStigIntent",
+          "slots": [],
+          "samples": [
+            "auto stig"
+          ]
+        },
+        {
+          "name": "CaptureIntent",
+          "slots": [],
+          "samples": [
+            "capture a photo"
+          ]
+        },
+        {
+          "name": "MCLAmazonIntent",
+          "slots": [],
+          "samples": [
+            "run Amazon M C L"
+          ]
+        },
+        {
+          "name": "NormalIntent",
+          "slots": [],
+          "samples": [
+            "normal",
+            "normal scan",
+            "back to normal",
+            "back to normal scan"
+          ]
+        },
+        {
+          "name": "GrabIntent",
+          "slots": [],
+          "samples": [
+            "update image",
+            "update the image"
+          ]
+        },
+        {
+          "name": "PasscodeIntent",
+          "slots": [
+            {
+              "name": "passcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "samples": [
+                "{passcode}"
+              ]
+            }
+          ],
+          "samples": [
+            "passcode {passcode}",
+            "{passcode}"
+          ]
+        },
+        {
+          "name": "GetVariableIntent",
+          "slots": [],
+          "samples": [
+            "show me variable values",
+            "what are the variable values",
+            "give me the variable list",
+            "show the variable list",
+            "show me the variable list"
+          ]
+        },
+        {
+          "name": "GetStagePositionIntent",
+          "slots": [],
+          "samples": [
+            "tell me the stage positions",
+            "tell me the stage position",
+            "what are the stage positions",
+            "What is the stage position"
+          ]
+        },
+        {
+          "name": "SetImagePositionIntent",
+          "slots": [
+            {
+              "name": "data",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "data_decimal",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "dir",
+              "type": "direction",
+              "samples": [
+                "move to {dir}",
+                "move to the {dir}",
+                "move {dir}"
+              ]
+            },
+            {
+              "name": "unit",
+              "type": "unit"
+            }
+          ],
+          "samples": [
+            "move image to the {dir} by {data} {unit}",
+            "move image {dir} by {data} point {data_decimal}",
+            "move image {dir} by {data}",
+            "move image {dir}",
+            "move image to the {dir}",
+            "move image to the {dir} by {data}",
+            "move image to the {dir} by  {data} point {data_decimal}"
+          ]
+        },
+        {
+          "name": "GetConIntent",
+          "slots": [],
+          "samples": [
+            "what is the contrast now",
+            "give me the contrast",
+            "what is contrast",
+            "what is the contrast",
+            "Get contrast"
+          ]
+        },
+        {
+          "name": "SetConIntent",
+          "slots": [
+            {
+              "name": "con",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "con_decimal",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "change",
+              "type": "change"
+            }
+          ],
+          "samples": [
+            "contrast {change}",
+            "{change} contrast",
+            "set contrast to {con} point {con_decimal} percent",
+            "set contrast to {con} point {con_decimal} ",
+            "set contrast to {con} percent",
+            "set contrast to {con}"
+          ]
+        },
+        {
+          "name": "SetStagePositionIntent",
+          "slots": [
+            {
+              "name": "dir",
+              "type": "direction",
+              "samples": [
+                "{dir}",
+                "move {dir}"
+              ]
+            },
+            {
+              "name": "data",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "data_decimal",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "nudge stage {dir} by {data}",
+            "nudge stage {dir}",
+            "nudge stage {dir} by {data} point {data_decimal}",
+            "move stage to the {dir} by {data} point {data_decimal}",
+            "move stage to the {dir} by {data}",
+            "move stage to the {dir}",
+            "move the stage to the {dir}",
+            "move the stage {dir} by {data} point {data_decimal}",
+            "move stage {dir} by {data} point {data_decimal}",
+            "move stage {dir} by {data}",
+            "move the stage {dir} by {data}",
+            "move the stage {dir}",
+            "move stage {dir} "
+          ]
+        },
+        {
+          "name": "SavePositionIntent",
+          "slots": [
+            {
+              "name": "int",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{int}",
+                "preset {int}"
+              ]
+            }
+          ],
+          "samples": [
+            "save stage position to preset {int}",
+            "save stage positions to preset {int}",
+            "save position to preset {int}",
+            "save positions to preset {int}"
+          ]
+        },
+        {
+          "name": "CallPositionIntent",
+          "slots": [
+            {
+              "name": "int",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "preset {int}"
+              ]
+            }
+          ],
+          "samples": [
+            "call stage position preset {int}",
+            "move stage to preset {int}",
+            "move to preset {int}"
+          ]
+        },
+        {
+          "name": "BeamOnIntent",
+          "slots": [],
+          "samples": [
+            "turn the beam on",
+            "turn on the beam",
+            "turn on",
+            "Turn on the sem"
+          ]
+        },
+        {
+          "name": "ShutDownIntent",
+          "slots": [],
+          "samples": [
+            "shutdown the gun",
+            "shutdown the sem"
+          ]
+        },
+        {
+          "name": "CloudIntent",
+          "slots": [],
+          "samples": [
+            "save image to the cloud",
+            "save image to google cloud",
+            "save image to google drive",
+            "Save image to cloud"
+          ]
+        },
+        {
+          "name": "WaitForNextIntent",
+          "slots": [],
+          "samples": [
+            "keep waiting for longer",
+            "Keep waiting longer",
+            "Wait again",
+            "keep await",
+            "Wait longer",
+            "Wait",
+            "Keep wait",
+            "Wait a bit",
+            "Wait for longer",
+            "Keep waiting"
+          ]
+        },
+        {
+          "name": "SetKVIntent",
+          "slots": [
+            {
+              "name": "kv",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{kv}",
+                "change to {kv}",
+                "change to {kv} point {kv_decimal}",
+                "{kv} point {kv_decimal}",
+                "set kv to {kv}"
+              ]
+            },
+            {
+              "name": "kv_decimal",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "set kv to {kv} point {kv_decimal}",
+            "set kv to {kv}",
+            "change kv to {kv}",
+            "change KV to {kv} point {kv_decimal}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "down"
+              }
+            },
+            {
+              "name": {
+                "value": "up "
+              }
+            },
+            {
+              "name": {
+                "value": "raise"
+              }
+            },
+            {
+              "name": {
+                "value": "reduce"
+              }
+            },
+            {
+              "name": {
+                "value": "decrease"
+              }
+            },
+            {
+              "name": {
+                "value": "increase"
+              }
+            }
+          ],
+          "name": "change"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "down"
+              }
+            },
+            {
+              "name": {
+                "value": "up"
+              }
+            },
+            {
+              "name": {
+                "value": "left"
+              }
+            },
+            {
+              "name": {
+                "value": "right "
+              }
+            }
+          ],
+          "name": "direction"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "macrometer"
+              }
+            },
+            {
+              "name": {
+                "value": "nanometer"
+              }
+            },
+            {
+              "name": {
+                "value": "millimeter"
+              }
+            }
+          ],
+          "name": "unit"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "SetMagIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "mag",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "mag_decimal",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "change",
+              "type": "change",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "SetBriIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "bri",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "bri_decimal",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "change",
+              "type": "change",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PasscodeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "passcode",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.94160011649.1455564562244"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SetImagePositionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "data",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "data_decimal",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "dir",
+              "type": "direction",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.685890903018.306267825540"
+              }
+            },
+            {
+              "name": "unit",
+              "type": "unit",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "SetStagePositionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "dir",
+              "type": "direction",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.828067603941.184049265680"
+              }
+            },
+            {
+              "name": "data",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "data_decimal",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "SavePositionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "int",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.326075905330.1524595034800"
+              }
+            }
+          ]
+        },
+        {
+          "name": "CallPositionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "int",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.295935225255.149203835988"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SetKVIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "kv",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.203900023191.1517318114199"
+              }
+            },
+            {
+              "name": "kv_decimal",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.122892727187.703699666443",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please give an input. To what value would you want to change magnification to?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.767371400111.383914437826",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please give an input. To what percentage do you want to change brightness to?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.171343812678.618797396812",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please provide the passcode."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.156146468167.631298748733",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please provide passcode."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.94160011649.1455564562244",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please provide a valid passcode."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.685890903018.306267825540",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell me which way you want to move to"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.828067603941.184049265680",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell me which way you want to move the stage"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.326075905330.1524595034800",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which preset would you want to save the positions to"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.295935225255.149203835988",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which set of values you want to move stage to"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.203900023191.1517318114199",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please give a number "
+          }
+        ]
+      }
+    ]
+  },
+  "version": "73"
+}
