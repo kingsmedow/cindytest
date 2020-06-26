@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-GB": {
+          "summary": "Voice assistance for University of Cambridge CAPE SEM",
+          "examplePhrases": [
+            "Alexa, open sem controller",
+            "Alexa, launch sem controller"
+          ],
+          "keywords": [],
+          "name": "Voice Microscope",
+          "description": "4th year project of Cindy Lam, University of Cambridge\n(some functions require a passcode to be enabled)\n\n1. Get Variable: \"Show me the variable list\"\n2. Set Magnification: \"Set magnification to {number (X)} / increase magnification\"\n3. Set Brightness: \"Set brightness to {number (%)} / decrease brightness\"\n4. Set Contrast: \"Set contrast to {number (%)} / reduce contrast\"\n5. Auto-Fine Align: \"Auto align\"\n6. Auto-Fine Focus: \"Auto focus\"\n7. Auto-Stig: \"Auto stig\"\n8. Update Image: \"Update image\"\n9. Get Stage Position: \"What are the stage positions\"\n10. Set Stage Position: \"Move stage to {direction} by {number (in um)} / move stage to the {direction}\"\n11. Set Image Position: \"Move image to the {direction} by {number(in um)} / move image {direction}\"\n12. Save Stage Position: \"Save stage positions to preset {integer}\"\n13. Call Stage Position: \"Move to preset {integer}\"\n14. Run-up: \"Turn on the sem/gun\"\n15. Shut Down: \"Shut down the sem/gun\"\n16. Save Image to Cloud: \"Save image to google cloud\"",
+          "smallIconUri": "file://assets/images/en-GB_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-GB_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Only for private use, will not public",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:620685763877:function:47c2573a-b9f7-4670-95df-43912378954b:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-GB": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
